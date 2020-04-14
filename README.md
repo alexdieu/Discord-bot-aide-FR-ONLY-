@@ -16,4 +16,4 @@ EDITEZ CES TRUCS (OBLIGATOIRE !)
 * `TOKEN` avec le token du bot
 * `OWNERS`(PROPRIOS EN FR) avec votre/vos ID discord
 * `BLACKLIST` pour blacklister les utilisateur non autorisés a utiliser le bot (leurs IDs)
-Ou trouver mon ID ? Mettez discord en mode developper et clique droit sur un utilisateur puis copier l'ID
+Ou trouver mon ID ? Mettez discord en mode developpeur et clique droit sur un utilisateur puis copier l'ID
