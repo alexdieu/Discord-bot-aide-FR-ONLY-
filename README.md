@@ -17,3 +17,9 @@ EDITEZ CES TRUCS (OBLIGATOIRE !)
 * `OWNERS`(PROPRIOS EN FR) avec votre/vos ID discord
 * `BLACKLIST` pour blacklister les utilisateur non autorisés a utiliser le bot (leurs IDs)
 Ou trouver mon ID ? Mettez discord en mode developpeur et clique droit sur un utilisateur puis copier l'ID
+## executer ces commandes aussi :
+- pip install asyncio
+- pip install aiohttp
+- pip install discord
+- pip install discord.py
+REQUIRES BUILD TOOLS VISUAL STUDIO ! link : https://www.microsoft.com/fr-fr/download/details.aspx?id=58317
