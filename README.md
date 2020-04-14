@@ -1,5 +1,5 @@
 # Discord-bot-aide-FR-ONLY-
-Un bot pour manager votre serveur ! Fait avec Python 3 !
+Un bot pour manager votre serveur ! Fait avec Python 3 !VOUS DEVZ AVOIR PYTHON 3 POUR LE FAIRE FONCTIONNER SUR VOTRE BOT !
 ## Comment utiliser ?
 
 * Creer un BOT DISCORD [ici]https://discordapp.com/developers/applications)
