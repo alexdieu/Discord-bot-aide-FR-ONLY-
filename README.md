@@ -22,4 +22,4 @@ Ou trouver mon ID ? Mettez discord en mode developpeur et clique droit sur un ut
 - pip install aiohttp
 - pip install discord
 - pip install discord.py
-_REQUIRES BUILD TOOLS VISUAL STUDIO ! link : https://www.microsoft.com/fr-fr/download/details.aspx?id=58317
+- REQUIRES BUILD TOOLS VISUAL STUDIO ! link : https://www.microsoft.com/fr-fr/download/details.aspx?id=58317
