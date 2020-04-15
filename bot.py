@@ -36,6 +36,27 @@ async def on_ready():
 	print("Qui fonctionne sous:", platform.system(), platform.release(), "(" + os.name + ")")
 	print('-------------------')
 	
+@client.command(name='additionne', pass_context=True)
+async def ajoute(context, a: int, b: int):
+    await context.send(a+b)
+
+@client.command(name='multiplie', pass_context=True)
+async def multiplie(context, a: int, b: int):
+    await context.send(a*b)
+
+@client.command(name='divise', pass_context=True)
+async def divise(context, a: int, b: int):
+    await context.send(a/b)
+
+@client.command(name='soustrait', pass_context=True)
+async def soustrait(context, a: int, b: int):
+    await context.send(a-b)
+
+@client.command(name='salut', pass_context=True)
+async def salut(context):
+    await context.send(":smiley: :wave: Bonjour !Je suis le plus rapide pour taper au clavier!{0}".format(context.message.author))
+    await context.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+	
 @client.command(name='youtube', pass_context=True)
 async def youtube(context, *, search):
     if context.message.author.id in BLACKLIST:
