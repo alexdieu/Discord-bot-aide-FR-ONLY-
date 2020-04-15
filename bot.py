@@ -80,12 +80,6 @@ async def serverinfo(context):
 async def on_ready():
     print(f'{client.user.name} s\'est connecté au discord !')
 
-@client.event
-async def on_member_join(member):
-    await member.create_dm()
-    await member.dm_channel.send(
-        f'Salut {member.name}, Bienvenue sur le serveur!'
-    )
 
 @client.event
 async def on_message(message):
