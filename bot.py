@@ -152,7 +152,7 @@ async def eight_ball(context, *args):
 		embed.set_footer(text='Question demandé par: {0} • Demandez la votre maintenant !'.format(context.message.author))
 		await context.message.channel.send(embed=embed)
 
-@client.command(name='bitcoin'pass_context=True)
+@client.command(name='bitcoin',pass_context=True)
 async def bitcoin(context):
 	url = 'https://api.coindesk.com/v1/bpi/currentprice/BTC.json'
 	async with aiohttp.ClientSession() as session:  
@@ -207,7 +207,6 @@ async def embed(context, *args):
 			await context.message.delete()
 		else:
 			embed = discord.Embed(title='ERREUR!', description='VOUS N AVEZ PAS LA PERMISSION D UTILISER CETTE COMMANDE', color=0x00FF00)
-								  color=0x00FF00)
 			await context.message.channel.send(embed=embed)
 
 
@@ -422,7 +421,7 @@ async def blacklist_error(context, error):
 
 @ban.error
 async def ban_error(context, error):
-	embed = discord.Embed(title='**Commande:** VOTRE_PREFIXE_ICI ban', description='**Description:** ban un joueur \n **Usage:** VOTRE_PREFIXE_ICI ban [utilisateur] [raison] \n **Example:** VOTRE_PREFIXE_ICI ban @RandomUser SORS D\'ICI'!', color=0x00FF00)
+	embed = discord.Embed(title='**Commande:** VOTRE_PREFIXE_ICI ban', description='**Description:** ban un joueur \n **Usage:** VOTRE_PREFIXE_ICI ban [utilisateur] [raison] \n **Example:** VOTRE_PREFIXE_ICI ban @RandomUser SORS D\'ICI!', color=0x00FF00)
 	await context.message.channel.send(embed=embed)
 
 @poll.error
