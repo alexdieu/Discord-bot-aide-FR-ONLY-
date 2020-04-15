@@ -63,11 +63,12 @@ async def youtube(context, *, search):
         embed = discord.Embed(title='Vous êtes blacklisté!', description='Demandez au propriétaire de retirer de la liste', color=0x00FF00)
         await context.message.channel.send(embed=embed)
     else:
-        query_string = parse.urlencode({'recherche youtube ': search})
-        html_content = request.urlopen('http://www.youtube.com/results?' + query_string)
-        search_results = re.findall('href=\"\\/watch\\?v=(.{11})', html_content.read().decode())
-        print(search_results)
-        await context.send('https://www.youtube.com/watch?v=' + search_results[0])
+    query_string = parse.urlencode({'search_query': search})
+    html_content = request.urlopen('http://www.youtube.com/results?' + query_string)
+    print(html_content.read().decode())
+    search_results = re.findall('href=\"\\/watch\\?v=(.{11})', html_content.read().decode())
+    print(search_results)
+    await context.send('https://www.youtube.com/watch?v=' + search_results[0])
 
 @client.command(name='proprio', pass_context=True)
 async def info(context):
