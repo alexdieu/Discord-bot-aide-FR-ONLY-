@@ -73,6 +73,7 @@ async def info(context):
 		e.add_field(name="Créateur:", value="ALEXDIEU", inline=True)
 		e.add_field(name="Version de Python:", value="{0}".format(python_version()), inline=True)
 		e.add_field(name="Préfixe:", value="VOTRE_PREFIXE_ICI ", inline=False)
+		e.add_field(name="Personne Sympa :",value=f"{context.guild.owner}")
 		e.set_footer(text="Demandé par  {0}".format(context.message.author))
 		await context.message.channel.send(embed=e)
 
