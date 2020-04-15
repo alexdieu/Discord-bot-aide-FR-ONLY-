@@ -322,7 +322,7 @@ async def unban(context, user: discord.Member):
 								  color=0x00FF00)
 			await context.message.channel.send(embed=embed)
 			await context.message.delete()
-			await user.send('Vous avez été débanni par **{0}**!  '.format(context.message.author) + 'RAISON: Ban révoqué')
+			await user.send('Vous avez été débanni par **{0}**!  '.format(context.message.author) + 'RAISON: Ban révoqué :wink: ')
 			await user.unban()
 		else:
 			embed = discord.Embed(title='ERREUR!', description='VOUS N AVEZ PAS LA PERMISSION D UTILISER CETTE COMMANDE', color=0x00FF00)
