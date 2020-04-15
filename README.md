@@ -26,3 +26,9 @@ Ou trouver mon ID ? Mettez discord en mode developpeur et clique droit sur un ut
 ## SI VOUS ETES SUR MACOS POUR INSTALLER PIP ,VOUS FAITES :
 sudo easy_install pip
 tapez votre mot de passe de session et vous etes bon .
+## Si vous voulez les modules en python 3 :
+- pip3 install asyncio
+- pip3 install aiohttp
+- pip3 install discord
+- pip3 install discord.py
+
