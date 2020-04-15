@@ -35,6 +35,32 @@ async def on_ready():
 	print("Version de Python:", platform.python_version())
 	print("Qui fonctionne sous:", platform.system(), platform.release(), "(" + os.name + ")")
 	print('-------------------')
+	
+@client.command(name='youtube', pass_context=True)
+async def youtube(context, *, search):
+    if context.message.author.id in BLACKLIST:
+        embed = discord.Embed(title='Vous êtes blacklisté!', description='Demandez au propriétaire de retirer de la liste', color=0x00FF00)
+        await context.message.channel.send(embed=embed)
+    else:
+        query_string = parse.urlencode({'recherche youtube ': search})
+        html_content = request.urlopen('http://www.youtube.com/results?' + query_string)
+        search_results = re.findall('href=\"\\/watch\\?v=(.{11})', html_content.read().decode())
+        print(search_results)
+        await context.send('https://www.youtube.com/watch?v=' + search_results[0])
+
+@client.command(name='proprio', pass_context=True)
+async def info(context):
+    if context.message.author.id in BLACKLIST:
+     embed = discord.Embed(title='Vous êtes blacklisté!', description='Demandez au propriétaire de retirer de la liste', color=0x00FF00)
+     await context.message.channel.send(embed=embed)
+    else:
+       embed = discord.Embed(title=f"Serveur infos :", description="Le serveur :", timestamp=datetime.datetime.utcnow(), color=discord.Color.blue())
+       embed.add_field(name="Serveur crée le ", value=f"{context.guild.created_at}")
+       embed.add_field(name="Proprio", value=f"{context.guild.owner}")
+       embed.add_field(name="Région du serveur", value=f"{context.guild.region}")
+       embed.add_field(name="ID DU SERVEUR", value=f"{context.guild.id}")
+       embed.set_thumbnail(url="https://pluralsight.imgix.net/paths/python-7be70baaac.png")
+       await context.message.channel.send(embed=embed)
 
 @client.command(name='info', pass_context=True)
 async def info(context):
@@ -387,6 +413,8 @@ async def help(context):
 		embed.add_field(name='deban - Débanne un utilisateur', value='Usage: VOTRE_PREFIXE_ICI deban <utilisateur>', inline=False)
 		embed.add_field(name='nettoyage - enleve un NB de messages ', value='Usage: VOTRE_PREFIXE_ICI nettoyage <nb>', inline=False)
 		embed.add_field(name='AIDE - Montre ce menu', value='Usage: VOTRE_PREFIXE_ICI AIDE', inline=False)
+		embed.add_field(name='proprio - Montre le propriétaire et la date de création du serveur ', value='Usage : n!proprio')
+                embed.add_field(name='youtube - Chercher une vidéo(ALPHA !)', value='Usage : n!youtube <mot clé>')
 		await context.message.channel.send(embed=embed)
 
 @client.event
