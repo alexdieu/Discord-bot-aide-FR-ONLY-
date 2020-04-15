@@ -22,6 +22,9 @@ Ou trouver mon ID ? Mettez discord en mode developpeur et clique droit sur un ut
 - pip install aiohttp
 - pip install discord
 - pip install discord.py
+- pip install python-chess
+- pip install selenium
+- pip install stockfishpy
 - REQUIRES BUILD TOOLS VISUAL STUDIO ! link : https://www.microsoft.com/fr-fr/download/details.aspx?id=58317
 ## SI VOUS ETES SUR MACOS POUR INSTALLER PIP ,VOUS FAITES :
 sudo easy_install pip
@@ -31,4 +34,7 @@ tapez votre mot de passe de session et vous etes bon .
 - pip3 install aiohttp
 - pip3 install discord
 - pip3 install discord.py
+- pip3 install python-chess
+- pip3 install stockfishpy
+- pip3 install selenium
 
