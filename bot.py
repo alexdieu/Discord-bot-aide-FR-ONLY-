@@ -76,15 +76,6 @@ async def serverinfo(context):
 		embed.add_field(name='__Roles (%s)__' % str(role_length), value=roles)
 		embed.set_footer(text='Créé à : %s' % time)
 		await context.message.channel.send(embed=embed)
-@client.event
-async def on_ready():
-    print(f'{client.user.name} s\'est connecté au discord !')
-
-
-@client.event
-async def on_message(message):
-    if 'joyeux anniversaire' in message.content.lower():
-        await message.channel.send('JOYEUX ANNIVERSAIRE! 🎈🎉')
 
 @client.command(name='ping', pass_context=True)
 async def ping(context):
