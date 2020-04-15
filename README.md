@@ -6,7 +6,7 @@ Un bot pour manager votre serveur ! Fait avec Python 3 !VOUS DEVEZ AVOIR PYTHON 
 * Obtenez le token de votre bot
 * Mettez le token du bot ligne 14 du programme python
 * Invitez le bot sur votre server en utilisant le lien suivant
-https://discordapp.com/oauth2/authorize?&client_id=VOTRE_BOT_ID_ICI&scope=bot&permissions=8
+https://discordapp.com/oauth2/authorize?&client_id=VOTRE_BOT_ID_ICI&scope=bot&permissions=8(exemple : https://discordapp.com/oauth2/authorize?&client_id=699907648610631720&scope=bot&permissions=8)
 Remplacez `VOTRE_APPLICATION_ID_ICI` avec l'ID de votre application 
 * Ouvrez votre terminal/cmd et entrez : `python3 bot.py` dans le répertoire ou est situé bot.py evidemment
 
