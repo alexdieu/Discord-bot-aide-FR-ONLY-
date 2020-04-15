@@ -23,6 +23,6 @@ Ou trouver mon ID ? Mettez discord en mode developpeur et clique droit sur un ut
 - pip install discord
 - pip install discord.py
 - REQUIRES BUILD TOOLS VISUAL STUDIO ! link : https://www.microsoft.com/fr-fr/download/details.aspx?id=58317
-SI VOUS ETES SUR MACOS POUR INSTALLER PIP ,VOUS FAITES :
+## SI VOUS ETES SUR MACOS POUR INSTALLER PIP ,VOUS FAITES :
 sudo easy_install pip
 tapez votre mot de passe de session et vous etes bon .
