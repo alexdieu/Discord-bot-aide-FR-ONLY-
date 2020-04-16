@@ -33,4 +33,4 @@ tapez votre mot de passe de session et vous etes bon .
 - pip3 install discord
 - pip3 install discord.py
 
-
+DITES MOI SVP SI VOUS TOMBEZ SUR DES ERREURS POUR QUE JE PUISSE LES CORRIGER MERCI !
